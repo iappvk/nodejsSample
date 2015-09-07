@@ -1,0 +1,17 @@
+{
+  "name": "ProjectM_server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js”
+  },
+  "dependencies": {
+   
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "express": "~4.2.0",
+    "express-session": "1.5.1",
+    "q": ">=0.8.5",
+
+  }
+}
