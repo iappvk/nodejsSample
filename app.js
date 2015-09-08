@@ -1,5 +1,22 @@
 var express = require('express')
 var url = require('url') ;
+var MongoClient = require('mongodb').MongoClient;
+
+MongoClient.initDB = function initDB() {
+    var dbconurl = null;
+     dbconurl = 'mongodb://localhost:27017/mconnect_staging';
+    MongoClient.connect(dbconurl, function(err, database) {
+        if (err) {
+            throw err;
+        } else {
+            // db = database;
+            exports.database.connection = database;
+            console.log("Successfully connected to database");
+        }
+    });
+};
+
+
 var app = express()
 
 app.set('port', (process.env.PORT || 5000))
