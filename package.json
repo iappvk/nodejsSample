@@ -8,6 +8,6 @@
     "dependencies": {
         "express": "~4.2.0",
         "url" : "latest",
-        "mongodb": "1.4.5",
+        "mongodb": "1.4.5"
     }
 }
